@@ -2,7 +2,6 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
-  important: "#root",
   theme: {
     extend: {
       gridTemplateColumns: {
@@ -13,10 +12,10 @@ const config: Config = {
       },
     },
   },
-  corePlugins: {
-    // Remove Tailwind CSS's preflight style so it can use the MUI's preflight instead (CssBaseline).
-    preflight: false,
-  },
+  // corePlugins: {
+  //   // Remove Tailwind CSS's preflight style so it can use the MUI's preflight instead (CssBaseline).
+  //   preflight: false,
+  // },
   plugins: [],
 }
 export default config
